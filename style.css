@@ -325,3 +325,53 @@ tr:nth-child(even) {
         margin: 5px 0;
     }
 }
+
+/* Responsive Layout Container */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+/* Fixes the Section Box for Mobile Padding */
+.section-block {
+    background: #ffffff;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+/* THE MOBILE FIX: Forces table wrapper to scroll instead of breaking layout */
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling for iPhone screens */
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+}
+
+/* Cleans up table spacing and stops squishing columns */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px; /* Forces tables to keep a clean structure on small mobile displays */
+    text-align: left;
+}
+
+th, td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eeeeee;
+    vertical-align: top;
+    line-height: 1.5;
+}
+
+th {
+    background-color: #f4f6f9;
+    color: #333333;
+    font-weight: 600;
+}
