@@ -50,8 +50,8 @@ body {
 
 .main-nav a:hover, .main-nav a.active {
     border: 1px solid #FFFFFF;
-    background-color: #FFFFFF;
-    color: #000000;
+    background-color: #0A1128; /* Changed from #FFFFFF to Navy Blue */
+    color: #FFFFFF;
 }
 
 /* --- App Layout with Index Sidebar --- */
@@ -124,8 +124,8 @@ body {
 }
 
 .alert-banner {
-    background-color: #FFFFFF;
-    color: #000000;
+    background-color: #0A1128; /* Changed from #FFFFFF to Navy Blue */
+    color: #ffffff;
     padding: 20px;
     font-weight: bold;
     text-align: center;
@@ -169,8 +169,8 @@ p {
 }
 
 .material-card a {
-    color: #000000;
-    background-color: #FFFFFF;
+    color: #FFFFFF;
+    background-color: #0A1128; /* Changed from #FFFFFF to Navy Blue */
     text-decoration: none;
     text-align: center;
     padding: 8px;
@@ -232,8 +232,8 @@ th, td {
 }
 
 th {
-    background-color: #FFFFFF;
-    color: #000000;
+    background-color: #0A1128; /* Changed from #FFFFFF to Navy Blue */
+    color: #FFFFFF;
     text-transform: uppercase;
     font-size: 14px;
 }
@@ -244,7 +244,7 @@ tr:nth-child(even) {
 
 /* --- Milestone Table Layout Enhancements --- */
 .milestone-badge {
-    background-color: #FFFFFF;
+    background-color: #0A1128; /* Changed from #FFFFFF to Navy Blue */
     color: #000000;
     padding: 4px 10px;
     font-size: 11px;
@@ -285,7 +285,7 @@ tr:nth-child(even) {
     position: absolute;
     top: -12px;
     left: 15px;
-    background-color: #ffffff;
+    background-color: #0A1128; /* Changed from #ffffff to Navy Blue */
     color: #0A1128;
     font-size: 0.75rem;
     font-weight: bold;
@@ -326,52 +326,18 @@ tr:nth-child(even) {
     }
 }
 
-/* Responsive Layout Container */
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 15px;
-    box-sizing: border-box;
+/* --- Fix Video Reference Link Visibility --- */
+.content-area a, 
+.section-block a,
+.meta-info a {
+    color: #FFFFFF !important;
+    text-decoration: underline;
+    font-weight: bold;
 }
 
-/* Fixes the Section Box for Mobile Padding */
-.section-block {
-    background: #ffffff;
-    padding: 20px;
-    margin-bottom: 25px;
-    border-radius: 8px;
-    box-sizing: border-box;
-}
-
-/* THE MOBILE FIX: Forces table wrapper to scroll instead of breaking layout */
-.table-wrapper {
-    width: 100%;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch; /* Smooth scrolling for iPhone screens */
-    margin-top: 15px;
-    margin-bottom: 15px;
-    border: 1px solid #e0e0e0;
-    border-radius: 6px;
-}
-
-/* Cleans up table spacing and stops squishing columns */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    min-width: 600px; /* Forces tables to keep a clean structure on small mobile displays */
-    text-align: left;
-}
-
-th, td {
-    padding: 12px 15px;
-    border-bottom: 1px solid #eeeeee;
-    vertical-align: top;
-    line-height: 1.5;
-}
-
-th {
-    background-color: #f4f6f9;
-    color: #333333;
-    font-weight: 600;
+.content-area a:hover, 
+.section-block a:hover,
+.meta-info a:hover {
+    color: #A0AEC0 !important; /* Changes to a light gray on hover so you know it is clickable */
+    text-decoration: none;
 }
