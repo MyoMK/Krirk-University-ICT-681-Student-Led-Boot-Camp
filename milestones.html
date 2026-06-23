@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -20,42 +20,52 @@
         </div>
     </header>
 
-    <div class="container">
-        <!-- HEADER BLOCK -->
-        <div class="section-block">
-            <h2>Krirk University ICT 681 Student-Led Boot Camp, Bangkok</h2>
-            <h3>3-Month Adaptive Python & Data Structure Blueprint (Pre-Semester Prep)</h3>
-            <p>Hey team! Welcome to your 12-week study roadmap for ICT Batch 681, designed to be completed before the semester starts. If you struggle to memorize syntax or freeze up on blank screens, this is for you. We use a friendly "Read, Break, and Fix" style so you build real programming logic without stressing your memory storage.</p>
-        </div>
+    <div class="dashboard-wrapper">
+        
+        <aside class="sidebar-index">
+            <h3>Milestone Index</h3>
+            <ul>
+                <li><a href="#overview">Plan Overview</a></li>
+                <li><a href="#rules">Learning Rules</a></li>
+                <li><a href="#month1">Month 1: Core Syntax</a></li>
+                <li><a href="#month2">Month 2: OOP Systems</a></li>
+                <li><a href="#month3">Month 3: DSA Course</a></li>
+            </ul>
+        </aside>
 
-        <!-- BRAIN-FRIENDLY ACCELERATED RULES -->
-        <div class="section-block" style="background-color: #f9f9f9; padding: 20px; border-left: 5px solid #0056b3; margin-bottom: 30px;">
-            <h2>Brain-Friendly Learning Rules (No Memorization Required)</h2>
-            <p>To fit this training into 3 months without burning out your brain networks, follow these three rules strictly:</p>
-            <p>1. <strong>Keep Cheat Sheets Open:</strong> Never type code from pure memory. Keep your reference guides open on your screen at all times.<br>
-            2. <strong>Tweak One Single Line:</strong> When working with a project snippet, change exactly one variable or value at a time, run it, and look at what changes.<br>
-            3. <strong>Guess the Error:</strong> When the code breaks, don't panic. Read the error line carefully like a puzzle hint to see exactly where the computer got confused.</p>
-        </div>
-
-        <!-- MONTH 1: SYNTAX & FUNDAMENTAL LOGIC -->
-        <div class="section-block">
-            <h2>Month 1: Core Syntax & Algorithmic Control Flow (Weeks 1-4)</h2>
-            <p>Get comfortable with core code mechanics, variable boxes, basic types, and logical execution tracks.</p>
+        <main class="content-area">
             
-            <div class="table-wrapper">
+            <div id="overview" class="section-block">
+                <h2>Krirk University ICT 681 Student-Led Boot Camp, Bangkok</h2>
+                <h3>3-Month Adaptive Python & Data Structure Blueprint (Pre-Semester Prep)</h3>
+                <p>Hey team! Welcome to your unofficial, 12-week study roadmap for ICT Batch 681, designed to be completed before the semester starts. If you struggle to memorize syntax or freeze up on blank screens, this is for you. We use a friendly "Read, Break, and Fix" style so you build real programming logic without stressing your memory storage.</p>
+            </div>
+
+            <div id="rules" class="section-block">
+                <h2>Brain-Friendly Learning Rules (No Memorization Required)</h2>
+                <p>To fit this training into 3 months without burning out your brain networks, follow these three rules strictly:</p>
+                <p>1. <strong>Keep Cheat Sheets Open:</strong> Never type code from pure memory. Keep your reference guides open on your screen at all times.<br>
+                2. <strong>Tweak One Single Line:</strong> When working with a project snippet, change exactly one variable or value at a time, run it, and look at what changes.<br>
+                3. <strong>Guess the Error:</strong> When the code breaks, don't panic. Read the error line carefully like a puzzle hint to see exactly where the computer got confused.</p>
+            </div>
+
+            <div id="month1" class="section-block">
+                <h2>Month 1: Core Syntax & Algorithmic Control Flow (Weeks 1-4)</h2>
+                <p>Get comfortable with core code mechanics, variable boxes, basic types, and logical execution tracks.</p>
+                
                 <table>
                     <thead>
                         <tr>
-                            <th style="width: 120px;">Timeline</th>
-                            <th style="width: 220px;">Weekly Template Project</th>
+                            <th>Timeline</th>
+                            <th>Weekly Template Project</th>
                             <th>Target Objectives (Read, Modify, Write Instructions)</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td><strong>Week 1</strong></td>
-                            <td><strong>Project: Currency Converter</strong></td>
-                            <td>
+                            <td data-label="Timeline" class="timeline-column">Week 1</td>
+                            <td data-label="Weekly Template Project"><strong>Project: Currency Converter</strong></td>
+                            <td data-label="Target Objectives">
                                 1. Open up a working script template that displays text and numbers on your screen.<br>
                                 2. Tweak the numbers inside the variable slots to see how the math recalculates automatically.<br>
                                 3. Add your own customized text labels inside the print brackets using pair quotes.<br>
@@ -63,9 +73,9 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><strong>Week 2</strong></td>
-                            <td><strong>Project: ATM PIN Validator</strong></td>
-                            <td>
+                            <td data-label="Timeline" class="timeline-column">Week 2</td>
+                            <td data-label="Weekly Template Project"><strong>Project: ATM PIN Validator</strong></td>
+                            <td data-label="Target Objectives">
                                 1. Read through a template script that uses if, elif, and else blocks to choose directions.<br>
                                 2. Edit the target check numbers to force the code down a completely different logic path.<br>
                                 3. Add a fresh decision layer by dropping a new elif block right into the template code.<br>
@@ -73,9 +83,9 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><strong>Week 3</strong></td>
-                            <td><strong>Project: Number Guessing Game</strong></td>
-                            <td>
+                            <td data-label="Timeline" class="timeline-column">Week 3</td>
+                            <td data-label="Weekly Template Project"><strong>Project: Number Guessing Game</strong></td>
+                            <td data-label="Target Objectives">
                                 1. Load up a loop template that runs repeatedly until a specific tracking variable hits a boundary.<br>
                                 2. Change the starting variable value to see how it makes the loop run shorter or longer.<br>
                                 3. Drop a break keyword straight inside the running loop to force it to stop instantly.<br>
@@ -83,9 +93,9 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><strong>Week 4</strong></td>
-                            <td><strong>Project: Grid Coordinator Map</strong></td>
-                            <td>
+                            <td data-label="Timeline" class="timeline-column">Week 4</td>
+                            <td data-label="Weekly Template Project"><strong>Project: Grid Coordinator Map</strong></td>
+                            <td data-label="Target Objectives">
                                 1. Look over a standard for loop running inside a fixed numeric range statement.<br>
                                 2. Modify the range boundary numbers to change where the loop count starts and stops.<br>
                                 3. Study a nested loop layout that prints a multi-line matrix coordinate grid map.<br>
@@ -95,27 +105,24 @@
                     </tbody>
                 </table>
             </div>
-        </div>
 
-        <!-- MONTH 2: DATA STRUCTURES & OBJECT PARADIGMS -->
-        <div class="section-block">
-            <h2>Month 2: Structural Data Collections & OOP Systems (Weeks 5-8)</h2>
-            <p>Transition from loose variables into organized collection layouts and reusable object-oriented code blocks.</p>
-            
-            <div class="table-wrapper">
+            <div id="month2" class="section-block">
+                <h2>Month 2: Structural Data Collections & OOP Systems (Weeks 5-8)</h2>
+                <p>Transition from loose variables into organized collection layouts and reusable object-oriented code blocks.</p>
+                
                 <table>
                     <thead>
                         <tr>
-                            <th style="width: 120px;">Timeline</th>
-                            <th style="width: 220px;">Weekly Template Project</th>
+                            <th>Timeline</th>
+                            <th>Weekly Template Project</th>
                             <th>Target Objectives (Read, Modify, Write Instructions)</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td><strong>Week 5</strong></td>
-                            <td><strong>Project: Student Grade Book Ledger</strong></td>
-                            <td>
+                            <td data-label="Timeline" class="timeline-column">Week 5</td>
+                            <td data-label="Weekly Template Project"><strong>Project: Student Grade Book Ledger</strong></td>
+                            <td data-label="Target Objectives">
                                 1. Read an existing list data collection pre-loaded with a row of sample student grades.<br>
                                 2. Use append and pop methods to drop fresh scores in or pull old scores out of the list.<br>
                                 3. Edit the index numbers inside the square brackets to grab a custom subset slice of the data list.<br>
@@ -123,9 +130,9 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><strong>Week 6</strong></td>
-                            <td><strong>Project: Inventory Stock Directory</strong></td>
-                            <td>
+                            <td data-label="Timeline" class="timeline-column">Week 6</td>
+                            <td data-label="Weekly Template Project"><strong>Project: Inventory Stock Directory</strong></td>
+                            <td data-label="Target Objectives">
                                 1. Look at a key-value dictionary block that maps store items directly to their price values.<br>
                                 2. Change a product price value by calling its text key label directly inside square brackets.<br>
                                 3. Drop a brand new item key and price pair entry into the existing dictionary variable.<br>
@@ -133,9 +140,9 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><strong>Week 7</strong></td>
-                            <td><strong>Project: Bank Account System</strong></td>
-                            <td>
+                            <td data-label="Timeline" class="timeline-column">Week 7</td>
+                            <td data-label="Weekly Template Project"><strong>Project: Bank Account System</strong></td>
+                            <td data-label="Target Objectives">
                                 1. Scan through a class blueprint containing property variables and internal function behaviors.<br>
                                 2. Alter the input settings inside the __init__ builder function to change an object's starting parameters.<br>
                                 3. Insert a print message inside an operational method to watch data shifts happen in real time.<br>
@@ -143,9 +150,9 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><strong>Week 8</strong></td>
-                            <td><strong>Project: Retail Checkout Tree</strong></td>
-                            <td>
+                            <td data-label="Timeline" class="timeline-column">Week 8</td>
+                            <td data-label="Weekly Template Project"><strong>Project: Retail Checkout Tree</strong></td>
+                            <td data-label="Target Objectives">
                                 1. Study a sub-class code block that automatically inherits fields from a parent class structure.<br>
                                 2. Edit a method inside the sub-class to change how it overrides the parent's default behavior.<br>
                                 3. Lock down an internal property variable by adding double underscores to make it private.<br>
@@ -155,27 +162,24 @@
                     </tbody>
                 </table>
             </div>
-        </div>
 
-        <!-- MONTH 3: DSA WITH PYTHON COURSE -->
-        <div class="section-block">
-            <h2>Month 3: Data Structures & Algorithms (DSA) with Python Course (Weeks 9-12)</h2>
-            <p>Master advanced computer algorithms, evaluate execution speeds using Big-O rules, and learn how pointer structures connect data arrays under the hood.</p>
-            
-            <div class="table-wrapper">
+            <div id="month3" class="section-block">
+                <h2>Month 3: Data Structures & Algorithms (Weeks 9-12)</h2>
+                <p>Master advanced computer algorithms, evaluate execution speeds using Big-O rules, and learn how pointer structures connect data arrays under the hood.</p>
+                
                 <table>
                     <thead>
                         <tr>
-                            <th style="width: 120px;">Timeline</th>
-                            <th style="width: 220px;">Weekly DSA Python Project</th>
+                            <th>Timeline</th>
+                            <th>Weekly DSA Python Project</th>
                             <th>Target Objectives (Read, Modify, Write Instructions)</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td><strong>Week 9</strong></td>
-                            <td><strong>Project: Array Memory Tracker & Linear vs. Binary Search</strong></td>
-                            <td>
+                            <td data-label="Timeline" class="timeline-column">Week 9</td>
+                            <td data-label="Weekly DSA Python Project"><strong>Project: Array Memory Tracker & Linear Search</strong></td>
+                            <td data-label="Target Objectives">
                                 1. Open a template script that measures how many operations a Linear Search takes to find a number in a list.<br>
                                 2. Swap the list with a sorted number set, run a Binary Search script, and look at how the number of steps drops dramatically.<br>
                                 3. Print out your tracking index values inside the loop to calculate operational performance efficiency rules manually.<br>
@@ -183,9 +187,9 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><strong>Week 10</strong></td>
-                            <td><strong>Project: Advanced Comparison Sorting (Merge Sort vs. Quick Sort)</strong></td>
-                            <td>
+                            <td data-label="Timeline" class="timeline-column">Week 10</td>
+                            <td data-label="Weekly DSA Python Project"><strong>Project: Advanced Comparison Sorting</strong></td>
+                            <td data-label="Target Objectives">
                                 1. Read a Merge Sort template that cuts an unsorted list completely in half, sorts the small pieces, and glues them back together.<br>
                                 2. Tweak the numbers inside the list to see how Merge Sort always takes a steady, predictable amount of time to finish.<br>
                                 3. Load a Quick Sort script template that uses a single 'pivot' number to split lower items to the left and higher items to the right.<br>
@@ -193,9 +197,9 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><strong>Week 11</strong></td>
-                            <td><strong>Project: Binary Heaps & The Heap Sort Engine</strong></td>
-                            <td>
+                            <td data-label="Timeline" class="timeline-column">Week 11</td>
+                            <td data-label="Weekly DSA Python Project"><strong>Project: Binary Heaps & Heap Sort</strong></td>
+                            <td data-label="Target Objectives">
                                 1. Open a structural template that simulates a Binary Heap layout (organizing values like a tree where parents are always larger than their child nodes).<br>
                                 2. Tweak individual values inside the heap list to watch how a 'heapify' script automatically bubbles numbers up or down to repair the tree order.<br>
                                 3. Run a Heap Sort script template that constantly pulls the largest top number off the heap to build a perfectly sorted list.<br>
@@ -203,9 +207,9 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><strong>Week 12</strong></td>
-                            <td><strong>Project: Linked Lists, Stacks, & Processing Pipelines</strong></td>
-                            <td>
+                            <td data-label="Timeline" class="timeline-column">Week 12</td>
+                            <td data-label="Weekly DSA Python Project"><strong>Project: Linked Lists & Processing Pipelines</strong></td>
+                            <td data-label="Target Objectives">
                                 1. Examine a Python class that builds a custom Node object holding an asset value alongside a next pointer reference.<br>
                                 2. Modify an intermediate pointer memory link to drop a middle node cleanly out of a Singly-Linked List without shifting array items.<br>
                                 3. Load a stack tracking tool template constrained by Last-In-First-Out (LIFO) operational rules.<br>
@@ -215,7 +219,8 @@
                     </tbody>
                 </table>
             </div>
-        </div>
+            
+        </main>
     </div>
 
 </body>
