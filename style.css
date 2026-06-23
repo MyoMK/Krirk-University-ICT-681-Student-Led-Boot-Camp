@@ -1,0 +1,327 @@
+/* --- Core Reset & Palette --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+    background-color: #0A1128; /* Dark Navy Blue */
+    color: #FFFFFF; /* White Text */
+    line-height: 1.6;
+}
+
+/* --- Layout Navigation Header --- */
+.site-header {
+    background-color: #000000; /* Pure Black Header Box */
+    border-bottom: 2px solid #FFFFFF;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 20px;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container h1 {
+    font-size: 22px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.main-nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+}
+
+.main-nav a:hover, .main-nav a.active {
+    border: 1px solid #FFFFFF;
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+/* --- App Layout with Index Sidebar --- */
+.dashboard-wrapper {
+    display: flex;
+    max-width: 1400px;
+    margin: 40px auto;
+    padding: 0 20px;
+    gap: 40px;
+}
+
+.sidebar-index {
+    width: 300px;
+    position: sticky;
+    top: 120px;
+    height: calc(100vh - 160px);
+    background-color: #000000;
+    border: 2px solid #FFFFFF;
+    padding: 25px;
+    overflow-y: auto;
+}
+
+.sidebar-index h3 {
+    border-bottom: 2px solid #FFFFFF;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.sidebar-index ul {
+    list-style: none;
+}
+
+.sidebar-index li {
+    margin-bottom: 12px;
+}
+
+.sidebar-index a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    padding: 4px 0;
+}
+
+.sidebar-index a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.content-area {
+    flex: 1;
+}
+
+/* --- Standard Page Containers --- */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* --- Styled Section Boxes --- */
+.section-block {
+    background-color: #000000;
+    border: 2px solid #FFFFFF;
+    padding: 40px;
+    margin-bottom: 40px;
+    scroll-margin-top: 120px; /* Offset for sticky header when tracking anchors */
+}
+
+.alert-banner {
+    background-color: #FFFFFF;
+    color: #000000;
+    padding: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    border: 2px solid #000000;
+}
+
+h2 {
+    font-size: 26px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #FFFFFF;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+/* --- Material Link Grid --- */
+.link-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.material-card {
+    border: 1px solid #FFFFFF;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.material-card a {
+    color: #000000;
+    background-color: #FFFFFF;
+    text-decoration: none;
+    text-align: center;
+    padding: 8px;
+    margin-top: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.material-card a:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+}
+
+/* --- Video Embed Container --- */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+    margin: 20px 0;
+    border: 2px solid #FFFFFF;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.meta-info {
+    border-left: 3px solid #FFFFFF;
+    padding-left: 15px;
+    margin: 15px 0;
+    font-size: 14px;
+}
+
+/* --- Maps Embed --- */
+.map-container {
+    border: 2px solid #FFFFFF;
+    margin-top: 20px;
+    background: #000000;
+}
+
+/* --- Table Styles for Curriculum --- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0 30px 0;
+}
+
+th, td {
+    border: 1px solid #FFFFFF;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #FFFFFF;
+    color: #000000;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* --- Milestone Table Layout Enhancements --- */
+.milestone-badge {
+    background-color: #FFFFFF;
+    color: #000000;
+    padding: 4px 10px;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 0;
+    display: inline-block;
+}
+
+.timeline-column {
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
+
+/* Architectural Framework Horizontal Flow Layout */
+.framework-chart-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 25px;
+    padding: 10px;
+    overflow-x: auto; /* Enables swipe support if viewed on a smaller window layout */
+}
+
+.chart-node {
+    background-color: #0d1630; /* Slightly highlighted background blocks */
+    border: 1px solid #1a2540;
+    border-radius: 8px;
+    padding: 20px;
+    flex: 1;
+    min-width: 180px;
+    position: relative;
+}
+
+.node-badge {
+    position: absolute;
+    top: -12px;
+    left: 15px;
+    background-color: #ffffff;
+    color: #0A1128;
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 2px 8px;
+    border-radius: 20px;
+}
+
+.chart-node h3 {
+    margin: 5px 0 10px 0;
+    font-size: 1.1rem;
+    color: #ffffff;
+}
+
+.chart-node p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #a0aec0;
+    line-height: 1.4;
+}
+
+.chart-arrow {
+    font-size: 1.5rem;
+    color: #1a2540;
+    font-weight: bold;
+    user-select: none;
+}
+
+/* Adjust layout on tight viewports */
+@media (max-width: 768px) {
+    .framework-chart-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .chart-arrow {
+        text-align: center;
+        transform: rotate(90deg);
+        margin: 5px 0;
+    }
+}
